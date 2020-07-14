@@ -1,0 +1,5 @@
+if (DISABLE_TESTING)
+    message(STATUS "Googletest subdirectory add skipped due to disabled testing")
+else (DISABLE_TESTING)
+    add_subdirectory(googletest)
+endif (DISABLE_TESTING)
