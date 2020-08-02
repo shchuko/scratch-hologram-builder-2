@@ -29,7 +29,7 @@ endif()
 
 add_compile_definitions(PROJECT_SOURCE_DIR_DEF="${CMAKE_CURRENT_SOURCE_DIR}")
 add_compile_definitions(PROJECT_VERSION_DEF="${PROJECT_VERSION}")
-add_compile_definitions(TEST_RESOURCES_DIR_DEF="${CMAKE_CURRENT_SOURCE_DIR}${SEP}test_resources")
+add_compile_definitions(TEST_RESOURCES_DIR_DEF="${CMAKE_CURRENT_SOURCE_DIR}/test_resources")
 
 
 # Creating global library
@@ -56,7 +56,7 @@ add_subdirectory(libs)
 
 target_link_libraries(${PROJECT_LIB_NAME} lib_simple_svg)
 target_link_libraries(${PROJECT_LIB_NAME} lib_tiny_obj_loader)
-target_link_libraries(${PROJECT_LIB_NAME} lib_glui)
+target_link_libraries(${PROJECT_LIB_NAME} glui_static)
 
 # Creating executable
 add_executable(${PROJECT_NAME} source/main.cpp)

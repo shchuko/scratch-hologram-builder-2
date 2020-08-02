@@ -2,7 +2,8 @@
 
 #include <simple_svg_1.0.0.hpp>
 #include <tiny_obj_loader.h>
-#include <glui.h>
+#include <GL/glui.h>
+#include <GL/glut.h>
 #include <boost/program_options.hpp>
 #include <CExampleClass.hpp>
 
